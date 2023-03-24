@@ -72,7 +72,7 @@ export default{
             font-weight: bold;
 
             .link{
-                padding: calc(100px / 2 - 0.7em - 4px) 0;
+                padding: calc(100px / 2 - 0.7em - 2.8px) 0;
                 cursor: pointer;
 
                 &:hover{

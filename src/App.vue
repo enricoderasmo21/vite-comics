@@ -20,6 +20,7 @@ export default{
 
 <template>
   <AppNav></AppNav>
+  <AppMain></AppMain>
  
 </template>
 
