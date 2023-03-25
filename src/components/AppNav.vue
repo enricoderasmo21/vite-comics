@@ -41,43 +41,36 @@ export default{
 
 <style scoped lang="scss">
 
-.container-centered{
-    margin-left: auto;
-    margin-right: auto;
+nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+
+    #logo{
+        height: 70px;
+
+        img{
+            height: 100%;
+        }
+    }
     
-    width: 70%;
-    
-    nav{
+    #links-container{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
+        gap: 25px;
 
-        height: 100px;
+        font-size: 0.7em;
+        font-weight: bold;
 
-        #logo{
-            height: 70px;
+        .link{
+            padding: calc(100px / 2 - 0.7em - 2.8px) 0;
+            cursor: pointer;
 
-            img{
-                height: 100%;
-            }
-        }
-        
-        #links-container{
-            display: flex;
-            flex-flow: row nowrap;
-            gap: 25px;
-
-            font-size: 0.7em;
-            font-weight: bold;
-
-            .link{
-                padding: calc(100px / 2 - 0.7em - 2.8px) 0;
-                cursor: pointer;
-
-                &:hover{
-                    color: #0288f9;
-                }
+            &:hover{
+                color: #0288f9;
             }
         }
     }
