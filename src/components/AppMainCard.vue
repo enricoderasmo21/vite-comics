@@ -7,23 +7,26 @@ export default{
         }
     },
     props: {
-        // img: String,
+        img: String,
         title: String,
     }
 }
 </script>
 
 <template>
-    <div class="card">
-        <img src="/img/test-thumb.jpg" alt="">
+    <a href="#" class="card">
+        <img :src="img" alt="">
         <div class="title"> {{ title }} </div>
-    </div>
+    </a>
 
 </template>
 
 <style scoped lang="scss">
 .card{
+    margin-bottom: 30px;
+
     width: 150px;
+    height: 220px;
 
     color: white;
 
@@ -34,6 +37,7 @@ export default{
 
     img{
         width: 100%;
+        height: 100%;
     }
 
 }
