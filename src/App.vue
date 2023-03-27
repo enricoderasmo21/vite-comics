@@ -1,7 +1,7 @@
 <script>
 import AppNav from "./components/AppNav.vue";
 import AppMain from "./components/AppMain.vue";
-import AppMainSecondSec from "./components/AppMainSecondSec.vue";
+import AppBuy from "./components/AppBuy.vue";
 import AppFooterFirstSec from "./components/AppFooterFirstSec.vue";
 import AppFooterSecondSec from "./components/AppFooterSecondSec.vue";
 
@@ -15,7 +15,7 @@ export default{
   components: {
     AppNav,
     AppMain,
-    AppMainSecondSec,
+    AppBuy,
     AppFooterFirstSec,
     AppFooterSecondSec
 
@@ -26,10 +26,10 @@ export default{
 <template>
 
   <AppNav></AppNav>
-  
+
 <main>
   <AppMain></AppMain>
-  <AppMainSecondSec></AppMainSecondSec>
+  <AppBuy></AppBuy>
 </main>
 
 <footer>

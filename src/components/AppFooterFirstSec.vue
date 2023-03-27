@@ -67,10 +67,12 @@ export default{
 
         .link-container{
             display: flex;
-            flex-direction: row;
-            gap: 20px;
+            flex-flow: column wrap;
+            gap: 30px;
 
             padding-top: 20px;
+
+            height: 300px;
 
             .link-list{
                 display: flex;

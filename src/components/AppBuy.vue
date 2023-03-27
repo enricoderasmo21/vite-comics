@@ -32,20 +32,20 @@ export default{
 
 <template>
     
-    <section class="sec-two">
+    <section class="shop-section">
         <div class="container-centered">
             
-            <ul class="card-container">
-                <li v-for="card in links" class="card">
+            <div class="links-container">
+                <a v-for="link in links" href="#" class="link">
                     <div class="img-container">
-                        <img :src="card.image" alt="">
+                        <img :src="link.image" alt="">
                     </div>
                     <div class="text">
-                        {{ card.text.toUpperCase() }}
+                        {{ link.text.toUpperCase() }}
                     </div>
-                </li>
+                </a>
 
-            </ul>
+            </div>
            
         </div>
     </section>
@@ -54,7 +54,7 @@ export default{
 
 <style scoped lang="scss">
 
-.sec-two{
+.shop-section{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,13 +62,13 @@ export default{
     height: 140px;
 
     background-color: #0282f9;
-    .card-container{
+    .links-container{
 
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         
-        .card{
+        .link{
             display: flex;
             flex-direction: row;
             gap: 10px;
