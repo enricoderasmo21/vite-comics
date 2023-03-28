@@ -1,5 +1,5 @@
 <script>
-import AppMainCard from './AppMainCard.vue';
+import MainCardItem from './MainCardItem.vue';
 
 export default{
     data(){
@@ -83,7 +83,7 @@ export default{
     },
 
     components: {
-        AppMainCard
+        MainCardItem
     }
 
 }             
@@ -98,7 +98,7 @@ export default{
         <div class="container-centered">
             <button id="btn-absolute" class="blue-btn">CURRENT SERIES</button>
             <div id="cards-container">
-                <AppMainCard v-for="card in cardObjects" :img="card.thumb" :title="card.series.toUpperCase()"></AppMainCard>
+                <MainCardItem v-for="card in cardObjects" :img="card.thumb" :title="card.series.toUpperCase()"></MainCardItem>
             </div>
             <div class="btn-container">
                 <button id="btn-load" class="blue-btn">LOAD MORE</button>

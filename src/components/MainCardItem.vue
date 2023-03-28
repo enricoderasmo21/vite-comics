@@ -1,6 +1,6 @@
 <script>
 export default{
-    name: "AppMainCard",
+    name: "MainCardItem",
     data() {
         return{
 
@@ -25,8 +25,7 @@ export default{
 .card{
     margin-bottom: 30px;
 
-    width: 150px;
-    height: 220px;
+    width: calc(100% / 6 - 45px / 6 * 3);
 
     color: white;
 
@@ -37,7 +36,11 @@ export default{
 
     img{
         width: 100%;
-        height: 100%;
+
+        aspect-ratio: 1/1;
+
+        object-fit: cover;
+        object-position: top;
     }
 
 }

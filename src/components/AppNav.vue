@@ -4,14 +4,13 @@ export default{
         return{
             links:["charachters", "comics", "movies", "tv", "games", "collectibles", "videos", "fans", "news", "shop"],
 
-            activeIndex: 0,
+            activeIndex: 1,
         }
     },
 
     methods:{
 
         activeLink(index){
-
             this.activeIndex = index; 
         }
 
